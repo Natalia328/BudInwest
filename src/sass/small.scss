@@ -1,0 +1,90 @@
+@media (min-width: 576px) {
+  // Nav
+  .nav {
+    padding: 2.2em;
+    &__burger {
+      img {
+        height: 3em;
+      }
+    }
+  }
+  // Header
+  .header {
+    &__text {
+      padding-left: 2em;
+      font-size: 3rem;
+    }
+  }
+  // Main
+  main {
+    // About-us
+    .about-us {
+      &__box {
+        margin-bottom: 2.5em;
+      }
+      &__text {
+        margin: 0 3.5rem;
+      }
+    }
+    // Career
+    .career {
+      &__box {
+        margin-bottom: 2.5em;
+      }
+      &__text {
+        margin: 0 3.5rem;
+      }
+      ul {
+        width: 60%;
+        margin: 0 auto 3rem;
+      }
+      &__info {
+        padding: 0.5rem 4rem;
+      }
+    }
+    .hero-img {
+      &__title {
+        font-size: 3rem;
+      }
+    }
+    // Offer
+    .offer {
+      width: 100%;
+      &__text {
+        padding: 0 2em 0.8em;
+        font-size: 1.6rem;
+      }
+      &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 1.5em;
+      }
+      &__card {
+        width: 43%;
+        margin: 1em;
+      }
+    }
+    // Icons
+    .icons {
+      &__box {
+        .icon {
+          padding: 1em 1em;
+          p {
+            font-size: 1em;
+          }
+          &__img {
+            width: 3.5em;
+          }
+        }
+      }
+    }
+    // Contact
+    .contact {
+      &__text {
+        padding: 0 2em 0.8em;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

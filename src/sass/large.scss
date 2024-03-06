@@ -1,0 +1,88 @@
+@media (min-width: 992px) {
+  // Nav
+  .nav {
+    &__link {
+      padding-right: 1em;
+      font-size: 2.5rem;
+    }
+    .logo {
+      padding-left: 3rem;
+      height: 11rem;
+    }
+  }
+  // Header
+  .header {
+    &__text {
+      padding-left: 5em;
+      font-size: 3.2rem;
+    }
+    &__img {
+      background-position: 0 70%;
+    }
+  }
+  main {
+    // About-us
+    .about-us {
+      &__box {
+        margin-left: 4em;
+      }
+    }
+    // Career
+    .career {
+      &__box {
+        margin-left: 4em;
+      }
+      ul {
+        width: 50%;
+      }
+    }
+    .hero-img {
+      height: 70vh;
+      background-position: 80% 80%;
+      &__title {
+        letter-spacing: 2px;
+        font-size: 3.2rem;
+      }
+    }
+    // Offer
+    .offer {
+      &__cards {
+        flex-wrap: nowrap;
+        padding: 2em;
+      }
+      &__card {
+        margin: 1em 1.5em 3em;
+      }
+    }
+    // Icons
+    .icons {
+      &__box {
+        padding: 3em 0 4em;
+      }
+    }
+    // Contact
+    .contact {
+      &__text {
+        padding: 0 2em 0.8em;
+        font-size: 1.6rem;
+      }
+      &__photo {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    padding: 2.8em 8em;
+  }
+  main {
+    // Offer
+    .offer {
+      &__card {
+        width: 25%;
+      }
+    }
+  }
+}
