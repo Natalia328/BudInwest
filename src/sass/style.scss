@@ -1,5 +1,11 @@
 $main-color: #0000ff;
-$second-color: #003;
+
+// $main-color: #FFA500;
+// $third-color: #003;
+$second-color: #F0F0F0;
+$third-color:black;
+// $second-color: white;
+$yellow: #FFA500;
 
 *, 
 *::before,
@@ -18,7 +24,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
     background-color: $second-color;
-    color: white;
+    color: black;
 }
 
 .scroll-fix::before {
@@ -39,22 +45,23 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: $second-color;
+    // background-color: $third-color;
     width: 100%;
     height: 6em;
     padding: 2em 1em 2em 0.5em;
     z-index: 102;
     transition: background-color .5s;
+    // border-bottom: 3px solid blue;
     .logo {
         padding-top: 0.5rem;
         height: 10rem;
     }
     .companyName {
-        font-size: 2em;
-        font-weight: 500;
+        font-size: 2.3em;
+        font-weight: 900;
         text-transform: none;
         font-family: 'arial black', sans-serif;
-       
+        padding-left: 0.6em;
     }
     .bud {
 
@@ -107,7 +114,7 @@ body{
     }
 }
 .shadow-bg{
-    background-color: rgb(0, 0, 0);
+    background-color: $third-color;
 }
 // Header
 
@@ -116,6 +123,7 @@ body{
     height: 100vh;
     &__img {
         background-image: url('/dist/img/header.jpg');
+        // background-color: #fff;
         width: 100%;
         height: 100%;
         background-size: cover;
@@ -125,23 +133,24 @@ body{
     }
     &__title {
         font-weight: 700;
-
+        text-align: center;
         position: relative;
-        top: 35%;
+        top: 30%;
         transform: translateY(-50%);
         font-size: 3.2rem;
         z-index: 100;
-        padding: 0 2rem;  
+        // padding: 0 2rem;  
     }
     &__text {
         font-weight: 400;
         position: relative;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
         font-size: 2.2rem;
         z-index: 100;
         padding: 0 2rem; 
     }
+    
     &__shadow {
         position: absolute;
         top: 0;
@@ -157,9 +166,16 @@ body{
         text-decoration: none;
         font-size: 2rem;
         border-radius: 5px;
-        background-color: $second-color;
+        background-color: black;
         color: white;
-        border: 2px solid rgb(0, 0, 0);
+        // border: 1px solid white;
+   
+    }
+    .header_btn:nth-child(2){
+        
+        background-color: blue;
+        color: $second-color;
+        // border: 2px solid black;
    
     }
     .buttons{
@@ -183,15 +199,15 @@ main {
         text-transform: uppercase;
         text-align: center;
         font-weight: 400;
-
+        color: black;
         // border-bottom: thick double white;
     }
     .underline {
         width: 100%;
-        height: 1px;
+        height: 3px;
         // margin: auto;
         margin: 0 0 0.2em;
-        background-color: white;
+        background-color: $yellow;
     }
      // About-us
     .about-us {
@@ -278,30 +294,41 @@ main {
     // Offer
     .offer {
         &__text {
-            padding: 0 .8em;
+            padding: 1.2em .8em;
             text-align: center;
             font-size: 1.5rem;
+            text-transform: uppercase;
+            
         }
         &__card {
             margin: 1.5em 2.5em 2em;
-            box-shadow: 0px 0px 3px rgb(54, 54, 54);
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
-            height: 35rem;
+            // box-shadow: 0px 0px 3px rgb(54, 54, 54);
+            box-shadow: 8px 8px 0px 0px $yellow;
+            border:3px solid $main-color;
+            border-radius: 25px;
+            // border-top-right-radius: 5px;
+            // border-top-left-radius: 5px;
+            // background-color: white;
+            // height: 35rem;
+            // background-image: url('/dist/img/offer1.jpg');
+            // background-size:cover;
+            
         }
         &__card-title{
             padding: 1em;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             text-transform: uppercase;
-            color: $main-color;
+            color: blue;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 10rem;
+            // border-bottom: 1rem double;
         }
         &__card-img{
             background-size: cover;
+            background-color: #fff;
             height: 25rem;
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
@@ -319,16 +346,24 @@ main {
             background-image: url('/dist/img/offer3.jpg');
         } 
     }
+    .card_text{
+        padding: 1em;
+        text-transform: uppercase;
+        color: black;
+    }
     // Icons
+
+
 
     .icons{
         position: relative;
         &__background{
-            background-image: url("/dist/img/icons.jpg");
-            width: 100%;           
-            background-size: cover;
-            background-position: center;           
-            color: white;
+            background-color: white;
+            // background-image: url("/dist/img/icons.jpg");
+            // width: 100%;           
+            // background-size: cover;
+            // background-position: center;           
+            color: $second-color;
         }
         .section-heading {
             position: relative;
@@ -339,14 +374,14 @@ main {
             position: relative;
             z-index: 1;
         }     
-        &__shadow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .5);
-        }
+        // &__shadow {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(0, 0, 0, .5);
+        // }
         &__box {
             display: flex;
             align-items: center;
@@ -381,6 +416,15 @@ main {
         &__photo{
             display: none;
         }
+        &__name{
+            font-family: "arial black", sans-serif;
+            font-size: 4rem;
+            margin-bottom: 1em;
+            font-weight: bold;;
+        }
+        &__secondName{
+            text-align: center;
+        }
         &__icons {
             padding: 1em;
         }
@@ -390,7 +434,12 @@ main {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            i{
+                color:blue;
+                font-size: 5rem;
+                padding-bottom: .3em;
+            }
           }
         &__text {
             padding: 0 .8em;
@@ -406,18 +455,25 @@ main {
             width: 100%;
         }     
 }
+iframe{
+    width: 80vw;
+    height: 80vw;
+    
+}
+
 }
 // Footer
 .footer {
     width: 100%;
     height: 4em;
-    background-color: rgb(0, 0, 0);
+    background-color: $third-color;
     display: flex;
     align-items: center;
+    // border-top: 3px solid blue;
     justify-content: center;
     &__text {
         font-size: 1.4rem;
-        color: white;
+        color: #F0F0F0;
         padding: 0 .8em;
     }
 }

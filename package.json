@@ -26,6 +26,7 @@
     "sass": "^1.43.4"
   },
   "dependencies": {
+    "boxicons": "^2.1.4",
     "gulp-imagemin": "^7.1.0"
   }
 }
